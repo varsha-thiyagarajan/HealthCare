@@ -81,15 +81,15 @@ console.error(error);
     });
 }
 })
-router.get('/appointment',async(req,res)=>
+router.get('/doctors',async(req,res)=>
 {
     try
     {
-        const doctors=await doctors.find();
+        const alldoctors=await doctors.find();
         res.status(200).json({
             success:true,
-            count:doctors.length,
-            data:doctors
+            count:alldoctors.length,
+            data:alldoctors
         })
     }catch(error)
     {

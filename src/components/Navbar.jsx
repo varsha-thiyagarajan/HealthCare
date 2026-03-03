@@ -22,9 +22,9 @@ function Navbar() {
           <Link to="/" className="hover:text-blue-600 transition">
             Home
           </Link>
-          <a href="#" className="hover:text-blue-600 transition">
+          <Link to="/about" className="hover:text-blue-600 transition">
             About
-          </a>
+          </Link>
           <a href="#" className="hover:text-blue-600 transition">
             Contact
           </a>

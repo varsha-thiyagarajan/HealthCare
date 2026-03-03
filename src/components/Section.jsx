@@ -56,6 +56,27 @@ function Section()
         </motion.div>
 
 </div>
+<div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+  <div className="p-4 bg-white rounded-xl shadow text-center">
+    <h2 className="text-2xl font-bold text-blue-600">50+</h2>
+    <p className="text-gray-600">Doctors</p>
+  </div>
+
+  <div className="p-4 bg-white rounded-xl shadow text-center">
+    <h2 className="text-2xl font-bold text-blue-600">10k+</h2>
+    <p className="text-gray-600">Patients</p>
+  </div>
+
+  <div className="p-4 bg-white rounded-xl shadow text-center">
+    <h2 className="text-2xl font-bold text-blue-600">24/7</h2>
+    <p className="text-gray-600">Emergency</p>
+  </div>
+
+  <div className="p-4 bg-white rounded-xl shadow text-center">
+    <h2 className="text-2xl font-bold text-blue-600">15+</h2>
+    <p className="text-gray-600">Departments</p>
+  </div>
+</div>
         </div>
         
     )

@@ -1,4 +1,4 @@
-const mongoose=require("mongoose")
+import mongoose from "mongoose";
 const slotSchema=new mongoose.Schema({
     startTime:
     {
@@ -58,5 +58,5 @@ const doctorSchema = new mongoose.Schema(
   },
   { timestamps: true }
 );
-
-module.exports = mongoose.model("Doctor", doctorSchema);
+const doctors= mongoose.model("Doctor", doctorSchema);
+export default doctors

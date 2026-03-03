@@ -1,8 +1,11 @@
 import im from "../assets/bookapp.png"
 import vi from "../assets/vi.png"
 import ma from "../assets/ma.png"
+import { useNavigate } from "react-router-dom";
+
 function Service()
 {
+  const navigate = useNavigate();
     return(
         <div className="max-w-6xl mx-auto px-6">
             <h2 className="text-3xl font-bold text-center mb-12">
@@ -24,7 +27,7 @@ transition-all duration-300 cursor-pointer">
                       />
         
        </div>
-       <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 hover:scale-105 
+       <div  onClick={() => navigate("/doctors")} className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 hover:scale-105 
 transition-all duration-300 cursor-pointer">
         <h3 className="text-xl font-semibold mb-2">
           View Doctors
